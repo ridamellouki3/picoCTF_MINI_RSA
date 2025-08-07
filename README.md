@@ -1,7 +1,7 @@
 # RSA Low Public Exponent Challenge
 
 This repository contains the solution for an RSA cryptography challenge involving a low public exponent (`e=3`) and a specific padding scheme.
-For more information on the RSA algorithm, see this helpful article:[RSA Algorithm in Cryptography] (https://www.geeksforgeeks.org/rsa-algorithm-cryptography/)
+For more information on the RSA algorithm, see this helpful article:[RSA Algorithm in Cryptography](https://www.geeksforgeeks.org/rsa-algorithm-cryptography/).
 ---
 
 
@@ -59,5 +59,6 @@ for i in range(10000):
         message_text = bytearray.fromhex(format(m, 'x')).decode()
         print(f"Decrypted Message: {message_text}")
         break
+
 
 

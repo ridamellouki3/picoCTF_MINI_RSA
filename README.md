@@ -57,3 +57,5 @@ for i in range(10000):
         message_text = bytearray.fromhex(format(m, 'x')).decode()
         print(f"Decrypted Message: {message_text}")
         break
+
+For more information on the RSA algorithm, see this helpful article: GeeksForGeeks: RSA Algorithm in Cryptography

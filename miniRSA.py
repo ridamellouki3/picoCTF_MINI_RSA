@@ -6,9 +6,10 @@ for i in range(10000):
     m, is_root = gmpy2.iroot(i*n + c, e)
     if is_root:
         print(f"Found i = {i}")
-        print("Message: {}".format(bytearray.fromhex(format(m, 'x')).decode()))
+        numbytes = (m.bit_length() + 7) // 8
+        mess_bytes = m.to_bytes(numbytes, 'big')
+        mess_text = mess_bytes.decode()
+        print(f"Message: {mess_text}")
         break
-
-print(f"The decrypted message m is: {m}")
 
 

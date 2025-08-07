@@ -1,8 +1,10 @@
 # RSA Low Public Exponent Challenge
 
 This repository contains the solution for an RSA cryptography challenge involving a low public exponent (`e=3`) and a specific padding scheme.
-
+For more information on the RSA algorithm, see this helpful article:[RSA Algorithm in Cryptography] (https://www.geeksforgeeks.org/rsa-algorithm-cryptography/)
 ---
+
+
 ## 📝 Problem Description
 The challenge explores a vulnerability that occurs when using a small public exponent in RSA. The plaintext message (`M`) was padded in such a way that `(M ** e)` is just barely larger than the modulus `N`. This means the standard low exponent attack where `c = M**e` does not directly apply.
 
@@ -58,4 +60,4 @@ for i in range(10000):
         print(f"Decrypted Message: {message_text}")
         break
 
-For more information on the RSA algorithm, see this helpful article: GeeksForGeeks: RSA Algorithm in Cryptography
+
